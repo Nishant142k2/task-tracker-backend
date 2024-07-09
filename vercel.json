@@ -1,7 +1,21 @@
 {
-    "version" :2,
-    "build": [{"src":"./main.js" ,"use":"@vercel/node"}],
-    "routes" :[{"src":"/(.*)" , "dest": "/"}]
-}
-  
+    "version": 2,
+    "builds": [
+      {
+        "src": "./",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/$1"
+      }
+    ],
+    "env": {
+      "DATABASE_URL": "mongodb+srv://nishant:123@cluster0.mongodb.net/database?retryWrites=true&w=majority",
+      "API_KEY": "123"
+    },
+    
+  }
   

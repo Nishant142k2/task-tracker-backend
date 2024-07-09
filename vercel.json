@@ -16,12 +16,6 @@
       "DATABASE_URL": "mongodb+srv://nishant:123@cluster0.mongodb.net/database?retryWrites=true&w=majority",
       "API_KEY": "123"
     },
-     "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/api/$1"
-      }
-    ]
-    
+   
   }
   
